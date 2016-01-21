@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// @import 'searchbar'
+
 @font-face
   font-family: "SSbold"
   src: url('/assets/SSBoldItalic.otf')
@@ -19,10 +21,10 @@
   // outline: 1px solid red
 
 body
-  background-color: rgba(51,51,51,1)
+
+#fifa-wrapper
+  margin: 2em auto
   width: 1200px
-  margin: 0 auto 100px auto
-  text-align: center
 
 h1
   font-family: SSbold
@@ -36,191 +38,3 @@ h4
   letter-spacing: 2px
   text-transform: uppercase
   font-size: 12px
-
-.neg
-  color: white
-
-.bg-img
-  width: 100%
-  height: 100%
-  background-size: cover
-
-.img0
-  background-image: image-url('Sion_3.jpg')
-
-.img1
-  background-image: image-url('Urgot_0.jpg')
-
-.img2
-  background-image: image-url('Hecarim_4.jpg')
-
-.img3
-  background-image: image-url('KogMaw_7.jpg')
-
-.img4
-  background-image: image-url('Heimerdinger_0.jpg')
-
-.img5
-  background-image: image-url('JarvanIV_5.jpg')
-
-.img6
-  background-image: image-url('Aatrox_0.jpg')
-
-input
-  background-image: url(search.svg)
-  background-size: 32px
-  background-position: 20px center
-  background-repeat: no-repeat
-  border: 1px solid #ccc
-  -webkit-border-radius: 3px
-  -moz-border-radius: 3px
-  -ms-border-radius: 3px
-  -o-border-radius: 3px
-  border-radius: 3px
-  padding: 10px 5px
-  text-indent: 46px
-  -webkit-transition: all 0.2s
-  -moz-transition: all 2s
-  transition: 200ms
-  width: 500px
-  height: 40px !important
-  color: rgba(51,51,51,1)
-  &:focus
-    background-position: -36px center
-    transition: all 0.2s
-    text-indent: 0
-    width: 700px
-    box-shadow: 0 0 20px rgba(0,0,0,0.5)
-
-
-.ps-head
-  margin: 20px auto 0 auto
-  width: 1200px
-  height: 440px
-  background-image: image-url('Aatrox_0.jpg')
-  background-size: cover
-  position: relative
-  box-shadow: 0px 7px 50px #000
-  .wrap
-    margin-top: 140px
-    z-index: 1
-    position: absolute
-    width: 100%
-    h1
-      text-shadow: 0 0 50px #000
-  .sponsor-wrap
-    position: absolute
-    z-index: 1
-    bottom: 10px
-    right: 10px
-    a
-      text-decoration: none
-  &:after
-    z-index: 0
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    bottom: 0
-    right: 0
-    background-color: rgba(0,0,0,0.2)
-    background-image: image-url('worn-dots4.png')
-  .ps-search
-    font-family: SSbook
-    height: 68px
-    width: 700px
-    outline: none
-    font-size: 26px
-    padding-left: 26px
-    border: none
-  .rotating-item
-    display: none
-    position: absolute
-    top: 0
-    left: 0
-
-
-.ps-body
-  background-color: rgba(51,51,51,1)
-  padding: 20px
-  padding-top: 50px
-  -webkit-border-radius: 3px
-  -moz-border-radius: 3px
-  -ms-border-radius: 3px
-  -o-border-radius: 3px
-  border-radius: 3px
-  box-shadow: 0px 7px 50px #000
-  // transition: 100ms
-
-.ps-body.affix
-  padding-top: 440px
-  // transition: 100ms
-
-@media screen and (max-width: 550px)
-  body
-    width: 100%
-  input
-    width: 300px
-
-@media screen and (max-width: 1000px)
-  body
-    width: 100%
-  input
-    width: 300px
-
-#test-fixed
-
-  z-index: 1
-  width: 1200px
-  margin-top: 0
-  height: 440px
-  position: relative
-  background-image: image-url('Aatrox_0.jpg')
-  background-size: cover
-  box-shadow: 0px 7px 50px #000
-  .wrap
-    margin-top: 140px
-    z-index: 1
-    position: absolute
-    width: 100%
-    h1
-      text-shadow: 0 0 50px #000
-  .ps-search
-    font-family: SSbook
-    height: 68px
-    width: 700px
-    outline: none
-    font-size: 26px
-    padding-left: 26px
-    border: none
-  .sponsor-wrap
-    position: absolute
-    z-index: 1
-    bottom: 10px
-    right: 10px
-    a
-      text-decoration: none
-
-.affix #test-fixed
-  position: fixed
-  background-image: none
-  background-color: rgba(51,51,51,1)
-  // transition: 100ms
-  height: 62px
-  top: 0
-  padding: 20px 0
-  .wrap
-    margin-top: 0
-    text-shadow: none
-    h1
-      display: none
-      // text-shadow: none
-      // color: black
-  .ps-search
-    font-family: SSbook
-    height: 68px
-    width: 700px
-    outline: none
-    font-size: 26px
-    padding-left: 26px
-    border: none
