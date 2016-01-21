@@ -1,0 +1,89 @@
+table.dataTable
+  font-family: SSbook
+  color: white
+  border-bottom: 1px solid rgba(255,255,255,0.4) !important
+  tbody
+    .even
+      background-color: rgba(58,58,58,1) !important
+    .odd
+      background-color: rgba(51,51,51,1) !important
+    tr
+      .small
+        font-size: 14px
+      td
+        height: 34px
+      &:hover
+        color: white
+        background-color: rgba(140,140,140,1) !important
+
+
+.header-text
+  font-family: SSbook
+  text-transform: uppercase
+  font-size: 12px
+  letter-spacing: 2px
+  color: rgba(255,255,255,0.4)
+  border-bottom: 1px solid rgba(255,255,255,0.4)
+  &:hover
+    color: black
+  &:active
+    color: rgba(179,0,222,1)
+
+
+.sorting_asc, .sorting_desc
+  color: white
+
+// pagination wrapper
+#DataTables_Table_0_paginate
+  padding-top: 0
+  margin-top: 15px
+  font-family: SSbook
+  text-transform: uppercase
+  font-size: 12px
+  letter-spacing: 2px
+  color: rgba(255,255,255,0.4)
+
+// pagination button
+#DataTables_Table_0_previous, #DataTables_Table_0_next
+  &:hover
+    color: black
+
+.ui-state-disabled
+  color: white
+
+// export button
+.dt-buttons.ui-buttonset
+  padding: 8px
+  margin-top: 15px
+  float: right !important
+  font-family: SSbook !important
+  text-transform: uppercase !important
+  font-size: 12px !important
+  letter-spacing: 2px !important
+  color: rgba(255,255,255,0.4) !important
+  &:hover
+    color: black !important
+    cursor: pointer
+    cursor: hand
+
+  // export buttons wrapper
+
+.dt-button-collection
+  width: 440px !important
+  box-shadow: 0 0 50px #000 !important
+  background-color: rgba(255,255,255,1) !important
+  // export buttons individual
+  a.dt-button.ui-button
+    display: inline-block !important
+    padding: 5px !important
+    padding-top: 8px !important
+    font-family: SSbook !important
+    margin: 10px !important
+    border: 2px solid white
+    transition: 150ms
+    &:hover
+      border: 2px solid black
+      transition: 150ms
+      border-radius: 5px
+      background-color: rgba(0,0,0,1)
+      color: white

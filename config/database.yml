@@ -1,0 +1,20 @@
+base: &base
+ adapter: postgresql
+ host: localhost
+ encoding: unicode
+ pool: 50
+ timeout: 5000
+ username: glennjones
+ password:
+
+development:
+ database: lp-table
+ <<: *base
+
+test:
+ database: lp-table
+ <<: *base
+
+production:
+ database: lp-table
+ <<: *base
