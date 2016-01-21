@@ -1,0 +1,86 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass here: http://sass-lang.com/
+
+@import 'colors'
+@import 'flex'
+
+body
+  color: white
+  margin: 4em 0
+  // background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px
+  // background-size: 16px 16px
+  background-color: $background-color
+
+.wide-wrap
+  width: 100%
+
+.thin-wrap
+  width: 720px
+  margin: 0 auto
+
+.navbar
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1
+  background-color: $accent-color
+  padding: 0.75em
+
+.header-section
+  height: 60vh
+  background-image: image-url('stadium2-overlay.jpg')
+  background-size: cover
+  background-position: 0% 50%
+
+#bracket-container
+  height: 100vh
+  background-image: image-url('bracket-dummy3.jpg')
+  background-size: cover
+#schedule-container
+  display: flex
+  flex-direction: column
+
+.schedule-item
+  height: 100px
+  &:hover
+    background-color: gold
+
+// dummy stuff
+.si1 
+  background-color: rgb(230,230,230)
+.si2 
+  background-color: rgb(200,200,200)
+.si3 
+  background-color: rgb(170,170,170)
+
+.player-item
+  width: 175px
+  height: 175px
+  background-image: image-url('face-dummy.jpg')
+  background-size: cover
+  &:hover
+    -webkit-filter: none
+    filter: none
+  text-align: center
+  .rank
+    color: $accent-color
+    border-bottom: 5px solid $accent-color
+    display: inline-block
+    // padding: 0.5em
+
+// player image variation
+.p1
+  -webkit-filter: grayscale(100%) brightness(50%)
+  filter: grayscale(100%) brightness(50%)
+.p2
+  -webkit-filter: grayscale(100%) brightness(65%)
+  filter: grayscale(100%) brightness(65%)
+.p3
+  -webkit-filter: grayscale(100%) brightness(80%)
+  filter: grayscale(100%) brightness(80%)
+
+#tournament-hightlights-container
+  display: flex
+  flex-direction: column
+

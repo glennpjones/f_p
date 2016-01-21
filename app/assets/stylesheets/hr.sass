@@ -1,0 +1,21 @@
+@import 'colors'
+
+hr
+  font-family: LatoBlack /* choose the font you like */
+  text-align: center /* horizontal centering */
+  line-height: 1px /* vertical centering */
+  font-size: 0.8em /* choose font size you like */
+  margin: 20px 0 /* 20px space above/below, 10px left/right */
+  border: none
+  border-top: 1px solid #676767
+
+hr:after
+  content: "¤" /* section sign */
+  color: #999
+  display: inline /* for vertical centering and background knockout */
+  background-color: $background-color /* same as background color */
+  padding: 0 0.5em /* size of background color knockout */
+
+/* opera doesn't render correctly. hide section sign */
+x:-o-prefocus, hr:after
+  content: ""

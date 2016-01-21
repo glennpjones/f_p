@@ -14,6 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require hogan.js
-//= require algolia/v2/algoliasearch.min
 
 //= require_tree .
