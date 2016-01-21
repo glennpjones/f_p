@@ -7,9 +7,6 @@
 
 body
   color: white
-  margin: 4em 0
-  // background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px
-  // background-size: 16px 16px
   background-color: $background-color
 
 .wide-wrap
@@ -26,6 +23,18 @@ body
   z-index: 1
   background-color: $accent-color
   padding: 0.75em
+  text-align: center
+  justify-content: flex-center
+  .nav-header
+    display: inline-block
+    margin-right: 1.5em
+  .nav-item
+    display: inline-block
+    margin-right: 1.5em
+    i, p
+      display: inline
+    &:hover
+      color: black
 
 .header-section
   height: 60vh
