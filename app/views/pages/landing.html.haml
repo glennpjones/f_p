@@ -1,16 +1,16 @@
 -# nav
 .wide-wrap.navbar
   %p.nav-header Some FIFA tournament
-  .nav-item
+  %a.nav-item{href: "#conditionsinfo"}
     %i.fa.fa-comment-o
     %p Conditions
-  .nav-item
+  %a.nav-item{href: "#organisationinfo"}
     %i.fa.fa-calendar-check-o
     %p Brackets & Schedule
-  .nav-item
+  %a.nav-item{href: "#playerinfo"}
     %i.fa.fa-user
     %p Players
-  .nav-item
+  %a.nav-item{href: "#tournamentinfo"}
     %i.fa.fa-bar-chart
     %p Tournament Stats
 
@@ -21,7 +21,7 @@
       Header
 
 -# rules section
-.thin-wrap
+.thin-wrap#conditionsinfo
   %h1 Conditions
   %h2 Prize Money
   %p
@@ -37,7 +37,7 @@
   %hr/
 
 -# brackets section
-.wide-wrap
+.wide-wrap#organisationinfo
   .thin-wrap
     %h1 Organisation
   .thin-wrap
@@ -55,7 +55,7 @@
   #bracket-container  
 
 -# players section
-.thin-wrap
+.thin-wrap#playerinfo
   %h1 Players
   #players-container.flex-container.wrap
     .player-item.p1
@@ -149,7 +149,7 @@
       %h2.rank 30
       %h3 H0L0
 -# tournament stats section
-.wide-wrap
+.wide-wrap#tournamentinfo
   .thin-wrap
     %h1 Tournament Highlights
   #tournament-highlights-container.wide-wrap
@@ -161,3 +161,11 @@
     .schedule-item.si3
 
 -# footer section
+
+:javascript
+  $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+  });
